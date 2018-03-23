@@ -2,12 +2,12 @@ var url = `https://quiet-bayou-99554.herokuapp.com/api/v1/contacts`
 
 fetch(url)
   .then(function(data) {
-    return data.json();
+    return data.json()
   })
   .then(function(myJson) {
     for(let i=0; i<5; i++) {
-      var characterList = document.createElement('li');
-      var selectUL = document.querySelector('ul');
+      var characterList = document.createElement('li')
+      var selectUL = document.querySelector('ul')
       selectUL.appendChild(characterList)
       var html = `
         <img src='${myJson.data[i].imageURL}'>

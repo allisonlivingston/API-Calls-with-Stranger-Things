@@ -5,7 +5,7 @@ var form = document.querySelector('form')
 function getCharacter() {
   fetch(url)
     .then(function(data) {
-      return data.json();
+      return data.json()
     })
     .then(function(myJson) {
       for(let i=0; i<5; i++) {
@@ -14,12 +14,12 @@ function getCharacter() {
         var queryString = currentURL.split('?')[1]
         var character = queryString.split('=')[1]
         var name = document.querySelector('.name')
-        
+
         name.setAttribute('value', character)
       }
 
     form.addEventListener('submit', function() {
-      event.preventDefault();
+      event.preventDefault()
 
       var text = document.querySelector('textArea')
       const formData = new FormData(form)
