@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "stranger-things-drill",
+    "staging": "stranger-things-drill"
+  }
+}
