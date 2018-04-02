@@ -28,7 +28,6 @@ function getData() {
 
     function displayImage(event) {
       var selectOptions = document.querySelectorAll('option')
-      console.log(event)
       for(let i=0; i<=response.length; i++) {
         if(event.target.value === "1") {
           selectImage.src = response[0].imageURL
@@ -64,5 +63,8 @@ function submitForm() {
   })
   .then(function(response) {
     message.innerHTML = response.message
+    setTimeout(function displayMessage() {
+      message.innerHTML = ''
+    }, 4000)
   })
 }
