@@ -33,4 +33,4 @@ You are making an app for your new company that assigns roles to employees. You'
     * Roberto Ortega, Commando
     * Elana Kopelevich, Siren
     * All other combinations should return `Not quite.`
-1. Deploy your work and add a link to it https://galvanize-personnel-dffac.firebaseapp.com
+1. Deploy your work and add a link to it https://revised-galvanize-personnel.firebaseapp.com
