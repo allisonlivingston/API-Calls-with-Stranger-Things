@@ -29,11 +29,11 @@ function getData() {
     function displayImage(event) {
       var selectOptions = document.querySelectorAll('option')
       for(let i=0; i<=response.length; i++) {
-        if(event.target.value === "1") {
+        if(event.target.value == response[0].id) {
           selectImage.src = response[0].imageURL
-        } else if(event.target.value === "2") {
+        } else if(event.target.value == response[1].id) {
           selectImage.src = response[1].imageURL
-        } else if(event.target.value === "3") {
+        } else if(event.target.value == response[2].id) {
           selectImage.src = response[2].imageURL
         }
         else {
